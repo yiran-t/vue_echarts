@@ -1,0 +1,43 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-11-06 10:12:26
+ * @LastEditTime: 2019-12-13 10:02:37
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \libra-cockpit\cockpit\public\index.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- <link rel="icon" href="www.baidu.com"> -->
+    <title>XXXX</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+<script>
+  var oHtml = document.documentElement;
+  getSize();
+
+  window.onresize = function(){
+    getSize();
+  }
+  function getSize(){
+    var screenWidth = oHtml.clientWidth;
+    if(screenWidth <= 1280){
+      // 如果说屏幕宽度小于320的话 就让根目录的font-size停留在320的这个范围内
+      oHtml.style.fontSize = '42.666667px';
+    } else if(screenWidth > 1980){
+      // 如果说屏幕宽度大于640的话 就让根目录的font-size停留在640的这个范围内
+      oHtml.style.fontSize = '100px';
+    }else{
+      // 在这个区间之间，就让根目录的font-size自己去适配
+      oHtml.style.fontSize = screenWidth/(1980/100) + 'px';
+    }
+  }
+</script>
+</body>
+</html>

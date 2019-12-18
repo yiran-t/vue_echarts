@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>XXXX</title><link href=/css/app.702b8ff8.css rel=preload as=style><link href=/css/chunk-vendors.37378a5e.css rel=preload as=style><link href=/js/app.17a4b311.js rel=preload as=script><link href=/js/chunk-vendors.f84b29f2.js rel=preload as=script><link href=/css/chunk-vendors.37378a5e.css rel=stylesheet><link href=/css/app.702b8ff8.css rel=stylesheet></head><body><div id=app></div><script>var oHtml = document.documentElement;
+  getSize();
+
+  window.onresize = function(){
+    getSize();
+  }
+  function getSize(){
+    var screenWidth = oHtml.clientWidth;
+    if(screenWidth <= 1280){
+      // 如果说屏幕宽度小于320的话 就让根目录的font-size停留在320的这个范围内
+      oHtml.style.fontSize = '42.666667px';
+    } else if(screenWidth > 1980){
+      // 如果说屏幕宽度大于640的话 就让根目录的font-size停留在640的这个范围内
+      oHtml.style.fontSize = '100px';
+    }else{
+      // 在这个区间之间，就让根目录的font-size自己去适配
+      oHtml.style.fontSize = screenWidth/(1980/100) + 'px';
+    }
+  }</script><script src=/js/chunk-vendors.f84b29f2.js></script><script src=/js/app.17a4b311.js></script></body></html>

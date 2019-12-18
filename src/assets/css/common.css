@@ -1,0 +1,23 @@
+@import './var.css';
+@import './reset.css';
+
+/*
+	* $viw 页面上显示的宽度
+	* $vih 页面上显示的高度
+	* $riw 雪碧图上图标的宽度
+	* $rih 雪碧图上图标的高度
+	* $rix 雪碧图上图标的x轴坐标
+	* $riy 雪碧图上图标的y轴坐标
+	*
+	*
+	*
+	*
+*/
+/*@define-mixin sprite $viw, $vih, $riw, $rih, $rix, $riy, $rpw: 452, $rph: 623 {
+    width: bpcalc($viw);
+    height: bpcalc($vih);
+    background-image: url(../../../static/assets/sharedbikes.png);
+    background-repeat: no-repeat;
+    background-size: bpcalc(($viw * $rpw)/ $riw) bpcalc(($vih * $rph)/ $rih);
+    background-position: -bpcalc(($viw * $rix) / $riw) -bpcalc(($vih * $riy)/$rih);
+}*/
